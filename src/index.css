@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Montserrat';
+}
+
+html,body{
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  max-width: 932px;
+  margin: auto auto;
+}
+
+header{
+  padding: 1.8rem;
+  background-color: #4943AE;
+}
+
+header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.userList{
+  margin-top: 3rem;
+}
+
+.userList .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.userList .container .card{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-radius: 15px;
+  width: 280px;
+  height: 360px;
+  background-color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-banner{
+  position:  relative;
+  background-color: #4943AE;
+  height: 100px;
+  width: 280px;
+}
+
+.card .info{
+  padding-top: 3rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-pp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+}
+
+.card-pp img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+}
+
+
+.card .info .title h1{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card .info .title h1 span{
+  color: #4943AE;
+}
+
+.card .info .sexual p{
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 0.8em;
+  color: rgba(0,0,0,0.3);
+}
+
+.card .info .mail h5,
+.card .info .phone h5{
+  display:  flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8em;
+  color: rgba(0,0,0,0.3);
+}
+
+.button{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  align-items: flex-end;
+}
+
+.button a{
+  text-decoration: none;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding: 1em;
+  background-color: #4943AE;
+  color: #fff;
+  transition: .2s;
+  border-radius: 15px;
+}
+
+.button a:hover{
+  background-color: #4905AE;
+}
